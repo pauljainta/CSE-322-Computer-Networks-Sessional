@@ -1,0 +1,16 @@
+ lambda  Average Hops:    Drop Rate
+ 0.01     3.2                 17
+ 0.05     1.58                36
+0.10      0.44                75
+0.25      0.22                83
+0.50      0.94                32
+0.80      0.42                76
+
+Appllying simpleDVR() instead of DVR() keeping lambda=0.10 gives
+
+Average Hops=0.36
+Drop Rate=75
+
+
+The reason is in DVR(),sfUpdate() always returns true,so it goes into infinte loop.To prvent this,I have stopped the DVR after
+no of routers-1 iteration. 

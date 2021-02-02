@@ -1,0 +1,519 @@
+TEST_OUTPUT-1
+
+
+-----  Stop and Wait Network Simulator Version 1.1 -------- 
+
+Enter the number of messages to simulate: 5
+Enter  frame loss probability [enter 0.0 for no loss]:0.2
+Enter frame corruption probability [0.0 for no corruption]:0.3
+Enter average time between messages from sender's layer3 [ > 0.0]:500
+Enter TRACE:2
+Enter piggybacking:0
+
+EVENT time: 46.784874,  type: 1, fromlayer3  entity: 1
+Packet aaa received at B_output
+Frame seq no 0 sent from B_output
+          TOLAYER1: frame being corrupted
+
+EVENT time: 50.875423,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 96.784874,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being corrupted
+
+EVENT time: 102.873894,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 146.784882,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 152.221573,  type: 2, fromlayer1  entity: 0
+Data frame 0 received at A_input
+At A_input,Data frame is normal(not duplicate)
+Sending acknowledgement frame from A_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 160.461243,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 196.784882,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 199.669922,  type: 2, fromlayer1  entity: 0
+Data frame 0 received at A_input
+At A_input,Data frame is normal(not duplicate)
+Sending acknowledgement frame from A_input
+
+EVENT time: 206.556305,  type: 2, fromlayer1  entity: 1
+Acknowledgement Received at B_input for -1
+
+EVENT time: 668.660522,  type: 1, fromlayer3  entity: 0
+Packet bbb received at A_output
+Frame seq no 0 sent from A_output
+
+EVENT time: 672.536804,  type: 2, fromlayer1  entity: 1
+Data frame 0 received at B_input
+At B_input,Data frame is normal(not duplicate)
+Sending acknowledgement frame from B_input
+
+EVENT time: 678.098206,  type: 2, fromlayer1  entity: 0
+Acknowledgement Received at A_input for -1
+
+EVENT time: 944.914063,  type: 1, fromlayer3  entity: 0
+Packet ccc received at A_output
+Frame seq no 1 sent from A_output
+
+EVENT time: 951.292419,  type: 1, fromlayer3  entity: 1
+Packet ddd received at B_output
+Frame seq no 1 sent from B_output
+          TOLAYER1: frame being lost
+
+EVENT time: 954.249084,  type: 2, fromlayer1  entity: 1
+Data frame 1 received at B_input
+Duplicate frame received at B_input,sequence no:1
+Sending acknowledgement frame from B_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 958.828003,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 994.914063,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+          TOLAYER1: frame being corrupted
+
+EVENT time: 1001.292419,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 1003.212280,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 1003.892822,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 1013.527771,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 1044.914063,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+
+EVENT time: 1050.995361,  type: 2, fromlayer1  entity: 1
+Data frame 1 received at B_input
+Duplicate frame received at B_input,sequence no:1
+Sending acknowledgement frame from B_input
+
+EVENT time: 1051.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 1055.547119,  type: 2, fromlayer1  entity: 0
+Acknowledgement Received at A_input for 1
+
+EVENT time: 1084.383667,  type: 1, fromlayer3  entity: 1
+Error at B side!!!Previous sending was not complete
+
+
+EVENT time: 1101.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being corrupted
+
+EVENT time: 1109.004272,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 1151.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 1156.988159,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 1164.841919,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 1201.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 1251.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being corrupted
+
+EVENT time: 1260.816162,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 1301.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 1351.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 1401.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 1402.453125,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 1406.649414,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 1451.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 1501.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 1502.836060,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+          TOLAYER1: frame being lost
+
+EVENT time: 1551.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 1557.210327,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 1564.605103,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 1601.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 1651.292480,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 1655.975220,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+
+EVENT time: 1658.943726,  type: 2, fromlayer1  entity: 1
+Acknowledgement Received at B_input for 1
+  Simulator terminated at time 1658.943726
+ after sending 5 msgs from layer5
+
+
+
+
+TEST_OUTPUT-2
+
+
+
+
+-----  Stop and Wait Network Simulator Version 1.1 -------- 
+
+Enter the number of messages to simulate: 5
+Enter  frame loss probability [enter 0.0 for no loss]:0.2
+Enter frame corruption probability [0.0 for no corruption]:0.3
+Enter average time between messages from sender's layer3 [ > 0.0]:100
+Enter TRACE:2
+Enter piggybacking:1
+
+EVENT time: 9.356975,  type: 1, fromlayer3  entity: 1 
+Packet aaa received at B_output
+Frame seq no 0 sent from B_output
+          TOLAYER1: frame being corrupted
+
+EVENT time: 13.447523,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 59.356976,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being corrupted
+
+EVENT time: 65.445999,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 109.356979,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 114.793671,  type: 2, fromlayer1  entity: 0
+Data frame 0 received at A_input
+At A_input,Data frame is normal(not duplicate)
+Waiting to send acknowledgement to A
+
+EVENT time: 133.732101,  type: 1, fromlayer3  entity: 0
+Packet bbb received at A_output
+Frame seq no 0 sent from A_output
+
+EVENT time: 138.687851,  type: 2, fromlayer1  entity: 1
+Piggyback frame 0 received at B_input
+At B_input,Data frame is normal(not duplicate),waiting to send acknowledgement to A
+
+EVENT time: 183.732101,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+
+EVENT time: 192.308228,  type: 2, fromlayer1  entity: 1
+Piggyback frame 0 received at B_input
+Duplicate frame received at B_input,sequence no:0
+Sending acknowledgement frame from B_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 196.884659,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 233.732101,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+
+EVENT time: 234.809418,  type: 1, fromlayer3  entity: 1
+Packet ccc received at B_output
+Frame seq no 1 sent from B_output
+
+EVENT time: 235.866821,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+At A_input,Data frame is normal(not duplicate)
+Waiting to send acknowledgement to A
+
+EVENT time: 237.608414,  type: 2, fromlayer1  entity: 1
+Piggyback frame 0 received at B_input
+Duplicate frame received at B_input,sequence no:0
+Sending acknowledgement frame from B_input
+
+EVENT time: 246.943451,  type: 2, fromlayer1  entity: 0
+Acknowledgement Received at A_input for 0
+
+EVENT time: 284.809418,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 331.931519,  type: 1, fromlayer3  entity: 1
+Error at B side!!!Previous sending was not complete
+
+
+EVENT time: 334.809418,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being corrupted
+
+EVENT time: 339.388336,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 384.809418,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being corrupted
+
+EVENT time: 393.788208,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 434.809418,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 436.729279,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 446.364258,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 459.639282,  type: 1, fromlayer3  entity: 0
+Packet eee received at A_output
+Frame seq no 1 sent from A_output
+
+EVENT time: 465.720612,  type: 2, fromlayer1  entity: 1
+Data frame 1 received at B_input
+At B_input,Data frame is normal(not duplicate)
+Waiting to send acknowledgement to A
+
+EVENT time: 484.809418,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 489.361145,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+          TOLAYER1: frame being lost
+
+EVENT time: 509.639282,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+          TOLAYER1: frame being corrupted
+
+EVENT time: 517.351013,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 534.809448,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 540.505127,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 548.358887,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 559.639282,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 584.809448,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being corrupted
+
+EVENT time: 594.333191,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 609.639282,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 634.809448,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 659.639282,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+
+EVENT time: 660.799988,  type: 2, fromlayer1  entity: 1
+Data frame 1 received at B_input
+Duplicate frame received at B_input,sequence no:1
+Sending acknowledgement frame from B_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 664.996277,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 684.809448,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 709.639282,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+
+EVENT time: 711.182861,  type: 2, fromlayer1  entity: 1
+Data frame 1 received at B_input
+Duplicate frame received at B_input,sequence no:1
+Sending acknowledgement frame from B_input
+          TOLAYER1: frame being lost
+
+EVENT time: 734.809448,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 740.727356,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 748.122131,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 759.639282,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+          TOLAYER1: frame being lost
+
+EVENT time: 784.809448,  type: 0, timerinterrupt   entity: 1
+Inside B timerinterrupt
+Exiting B timerinterrupt
+
+EVENT time: 789.492188,  type: 2, fromlayer1  entity: 0
+Data frame 1 received at A_input
+Duplicate frame received at A_input,sequence no:1
+Sending acknowledgement frame from A_input
+
+EVENT time: 792.460693,  type: 2, fromlayer1  entity: 1
+Acknowledgement Received at B_input for 1
+
+EVENT time: 809.639282,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+
+EVENT time: 815.793945,  type: 2, fromlayer1  entity: 1
+Data frame 1 received at B_input
+Duplicate frame received at B_input,sequence no:1
+Sending acknowledgement frame from B_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 824.455505,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 859.639282,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+
+EVENT time: 866.658630,  type: 2, fromlayer1  entity: 1
+Data frame 1 received at B_input
+Duplicate frame received at B_input,sequence no:1
+Sending acknowledgement frame from B_input
+          TOLAYER1: frame being corrupted
+
+EVENT time: 868.445007,  type: 2, fromlayer1  entity: 0
+Corrupt frame received at A_input
+
+EVENT time: 909.639282,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+          TOLAYER1: frame being corrupted
+
+EVENT time: 915.875000,  type: 2, fromlayer1  entity: 1
+Corrupt frame received at B_input
+
+EVENT time: 959.639282,  type: 0, timerinterrupt   entity: 0
+Inside A timerinterrupt
+Exiting A timerinterrupt
+
+EVENT time: 963.594116,  type: 2, fromlayer1  entity: 1
+Data frame 1 received at B_input
+Duplicate frame received at B_input,sequence no:1
+Sending acknowledgement frame from B_input
+
+EVENT time: 965.541443,  type: 2, fromlayer1  entity: 0
+Acknowledgement Received at A_input for 1
+  Simulator terminated at time 965.541443
+ after sending 5 msgs from layer5
